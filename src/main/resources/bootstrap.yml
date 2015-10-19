@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: foo
+  cloud:
+    config:
+      uri: http://localhost:8888
+      failFast: false
+      
+endpoints:
+  restart:
+    enabled: true

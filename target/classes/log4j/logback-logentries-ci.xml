@@ -1,0 +1,19 @@
+<!DOCTYPE project>
+<included>
+
+	<appender name="LE" class="com.logentries.logback.LogentriesAppender">
+		<Debug>False</Debug>
+		<Token>XXX</Token>
+		<Ssl>False</Ssl>
+		<facility>USER</facility>
+		<layout>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</layout>
+	</appender>
+
+
+	<root level="INFO">
+		<appender-ref ref="LE" />
+	</root>
+
+</included>
